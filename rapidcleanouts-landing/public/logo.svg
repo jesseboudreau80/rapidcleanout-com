@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-label="Rapid truck logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#1f8dd6"/>
+      <stop offset="1" stop-color="#0f6fb1"/>
+    </linearGradient>
+  </defs>
+  <circle cx="210" cy="210" r="155" fill="none" stroke="url(#g)" stroke-width="12"/>
+  <g fill="url(#g)">
+    <rect x="110" y="160" width="170" height="95" rx="8"/>
+    <path d="M280 178l52 10c6 1 10 6 10 12v42h-62z"/>
+    <circle cx="150" cy="258" r="18" fill="#fff"/>
+    <circle cx="150" cy="258" r="11"/>
+    <circle cx="260" cy="258" r="24" fill="#fff"/>
+    <circle cx="260" cy="258" r="15"/>
+    <polygon points="292,192 323,198 330,222 288,214" fill="#fff"/>
+    <text x="142" y="218" fill="#fff" font-size="36" font-family="Arial, sans-serif" font-weight="700">RAPID</text>
+    <path d="M38 208h95" stroke="url(#g)" stroke-width="9"/>
+    <path d="M50 188h85" stroke="url(#g)" stroke-width="7"/>
+    <path d="M56 228h79" stroke="url(#g)" stroke-width="7"/>
+    <path d="M72 168h63" stroke="url(#g)" stroke-width="6"/>
+    <path d="M78 248h57" stroke="url(#g)" stroke-width="6"/>
+  </g>
+</svg>

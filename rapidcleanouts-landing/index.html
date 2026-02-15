@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rapid Handyman Services | rapidcleanouts.com</title>
+    <meta
+      name="description"
+      content="Rapid Handyman Services for townhouse and condo improvements. Request a free estimate for cleanouts, repairs, hardscapes, pressure washing, and upgrades."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <div class="hero-logo-wrap">
+          <img src="/public/logo.svg" alt="Rapid Services logo" class="hero-logo" />
+        </div>
+        <p class="badge">Local • Insured • Fast Response</p>
+        <h1>Rapid Handyman Services — Townhouse & Condo Improvements</h1>
+        <p class="subhead">
+          Reliable, one-call help for repairs, upgrades, and cleanup so your property stays safe,
+          functional, and looking great.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="container services" aria-labelledby="services-title">
+        <h2 id="services-title">Most Popular Services</h2>
+        <p class="services-kicker">All Handyman Repairs and Upgrades</p>
+        <ul class="service-grid">
+          <li>Junk Cleanouts & Removal</li>
+          <li>Home & Office Cleaning</li>
+          <li>Patio & Deck Improvements</li>
+          <li>Hardscapes & Pressure Washing</li>
+          <li>Door & Window Repair</li>
+          <li>Weather Sealing</li>
+          <li>Appliance Updates</li>
+          <li>Ceiling Fan Installs</li>
+          <li>Light Carpentry & Fixtures</li>
+        </ul>
+      </section>
+
+      <section class="container form-section" aria-labelledby="form-title">
+        <h2 id="form-title">Request a Free Estimate</h2>
+        <p>Tell us about your project and we'll follow up quickly.</p>
+
+        <form id="estimate-form" enctype="multipart/form-data" novalidate>
+          <div class="field-row split-2">
+            <div>
+              <label for="firstName">First Name <span class="required">*</span></label>
+              <input id="firstName" name="firstName" type="text" required maxlength="80" />
+            </div>
+            <div>
+              <label for="lastName">Last Name <span class="required">*</span></label>
+              <input id="lastName" name="lastName" type="text" required maxlength="80" />
+            </div>
+          </div>
+
+          <div class="field-row split-2">
+            <div>
+              <label for="phone">Phone <span class="required">*</span></label>
+              <input id="phone" name="phone" type="tel" required maxlength="25" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" maxlength="120" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <label for="address">Street Address</label>
+            <input id="address" name="address" type="text" maxlength="200" />
+          </div>
+
+          <div class="field-row split-3">
+            <div>
+              <label for="city">City</label>
+              <input id="city" name="city" type="text" maxlength="100" />
+            </div>
+            <div>
+              <label for="state">State</label>
+              <input id="state" name="state" type="text" maxlength="2" placeholder="NC" />
+            </div>
+            <div>
+              <label for="zip">ZIP</label>
+              <input id="zip" name="zip" type="text" inputmode="numeric" maxlength="10" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <label for="timeline">Estimated Time of Completion</label>
+            <select id="timeline" name="timeline">
+              <option value="ASAP">ASAP</option>
+              <option value="1-2 weeks">1-2 weeks</option>
+              <option value="1 month">1 month</option>
+              <option value="Flexible">Flexible</option>
+            </select>
+          </div>
+
+          <div class="field-row">
+            <label for="projectDetails">Project Details</label>
+            <textarea
+              id="projectDetails"
+              name="projectDetails"
+              rows="5"
+              placeholder="Example: Replace two exterior door sweeps and pressure wash patio."
+              maxlength="2500"
+            ></textarea>
+          </div>
+
+          <div class="field-row">
+            <label for="photo">Project Photo <span class="required">*</span></label>
+            <input id="photo" name="photo" type="file" accept="image/*" required />
+          </div>
+
+          <div class="field-row consent-row">
+            <label class="check-label" for="smsConsent">
+              <input id="smsConsent" name="smsConsent" type="checkbox" value="yes" required />
+              I agree to receive SMS/text messages about this estimate request.
+            </label>
+          </div>
+
+          <!-- Honeypot: hidden from users but visible to bots -->
+          <div class="honeypot" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <button type="submit" class="cta-btn">Request a Free Estimate</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© 2026 Rapid Services of NC</p>
+      </div>
+    </footer>
+
+    <script src="form.js" defer></script>
+  </body>
+</html>
